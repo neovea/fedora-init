@@ -4,6 +4,9 @@
 sudo dnf update -y
 sudo dnf install -y alacritty neovim tmux zsh curl git make ripgrep evolution evolution-ews steam transmission timeshift
 
+curl -L https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/JetBrainsMono.zip -o JetBrainsMono.zip
+mkdir ~/.fonts && unzip JetBrainsMono.zip -d ~/.fonts
+
 # Installation de Docker Desktop
 curl https://desktop.docker.com/linux/main/amd64/docker-desktop-4.26.1-x86_64.rpm
 sudo dnf install -y ./docker-desktop-4.26.1-x86_64.rpm
